@@ -93,8 +93,7 @@
     "architect": {
       "build": {
         "options": {
-          "outputPath": "dist/public" , 
-                    "outputPath": "public"
+          "outputPath": "dist/public"
         }
       }
     }
