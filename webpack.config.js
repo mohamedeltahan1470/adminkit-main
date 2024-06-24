@@ -6,6 +6,16 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
+  }
+};
+
 const opts = {
   rootDir: process.cwd(),
   devBuild: process.env.NODE_ENV !== "production"
