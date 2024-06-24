@@ -88,6 +88,16 @@
     "webpack-dev-server": "4.15.0"
   },
   
-
+"projects": {
+  "your-app": {
+    "architect": {
+      "build": {
+        "options": {
+          "outputPath": "dist/public"
+        }
+      }
+    }
+  }
+}
 }
 
