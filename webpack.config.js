@@ -20,10 +20,7 @@ module.exports = {
   entry: {
     app: "./src/js/app.js"
   },
-    output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/public'),
-  },
+  
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
     process.env.NODE_ENV === "production" ? "source-map" : "inline-source-map",
