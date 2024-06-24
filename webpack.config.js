@@ -25,7 +25,7 @@ module.exports = {
   devtool:
     process.env.NODE_ENV === "production" ? "source-map" : "inline-source-map",
   output: {
-    path: Path.join(opts.rootDir, "dist"),
+    path: Path.join(opts.rootDir, "dist/public"),
     pathinfo: opts.devBuild,
     filename: "js/[name].js",
     chunkFilename: 'js/[name].js',
