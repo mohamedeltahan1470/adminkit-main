@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
+const path = require('path');
 
 
 
@@ -12,6 +13,16 @@ const opts = {
   rootDir: process.cwd(),
   devBuild: process.env.NODE_ENV !== "production"
 };
+
+module.exports = {
+  // other webpack configurations...
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist/public'),
+  },
+  // other webpack configurations...
+};
+
 
 module.exports = {
   entry: {
