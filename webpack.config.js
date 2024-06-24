@@ -14,19 +14,15 @@ const opts = {
   devBuild: process.env.NODE_ENV !== "production"
 };
 
-module.exports = {
-  // other webpack configurations...
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/public'),
-  },
-  // other webpack configurations...
-};
 
 
 module.exports = {
   entry: {
     app: "./src/js/app.js"
+  },
+    output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist/public'),
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
